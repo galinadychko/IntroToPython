@@ -4,7 +4,7 @@ import stdio
 
 r, g, b = map(int, sys.argv[1:4])
 
-is_zero = (r == 0) & (g == 0) & (b == 0)
+is_zero = (r == 0) | (g == 0) | (b == 0)
 
 w = max((r / 255, g/255, b/255))
 c = (w - (r/255)) / (w or is_zero)
